@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     int term1;
     int term2;
     term1 = ThreadLocalRandom.current().nextInt(1,10);
-    term2 = ThreadLocalRandom.current().nextInt(1,10);
+    term2 = ThreadLocalRandom.current().nextInt(1, 10-term1+1);
     TextView equation = findViewById(R.id.equationTextView);
     equation.setText(term1 + "+" + term2);
   }
